@@ -1,0 +1,22 @@
+
+	var me = {
+		email: 'abc@gmail.com',
+		password: '123456'
+	}
+
+	$scope.goAway = false;
+	$scope.ok = false;
+
+	$scope.formModel = {
+		email: '',
+		password: ''
+	}
+
+	$scope.submitForm = function () {
+		console.log($scope.formModel);
+		if (angular.equals($scope.formModel, me)) {
+			$scope.ok = true;
+		} else {
+			$scope.goAway = true;
+		}
+	};
