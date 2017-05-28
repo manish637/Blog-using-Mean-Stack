@@ -1,24 +1,85 @@
 
-<div class="container" ng-controller="View1Ctrl" style="background: #f3e5f5;">
-	<h1>LOGIN</h1>
-	
+<style type="text/css">
 
-	<form>
-  <div class="jumbotron">
+.bg{
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  /*opacity: 0.8;*/
+}
+
+
+
+@font-face {
+ font-family:handlee;
+ src: url("fonts/handlee-regular.ttf");
+} 
+@font-face{
+  font-family: poiret;
+ src: url("fonts/PoiretOne-Regular.ttf");
+}
+@font-face{
+  font-family: lanenar;
+ src: url("fonts/LANENAR_.ttf");
+}
+@font-face{
+  font-family: awesome;
+ src: url("fonts/fontawesome-webfont.ttf");
+}
+@font-face{
+  font-family: adventel;
+ src: url("fonts/advent-proextralight.ttf");
+}
+@font-face{
+  font-family: adventpt;
+ src: url("fonts/advent-prothin.ttf");
+}
+@font-face{
+  font-family: adventpl;
+ src: url("fonts/advent-prolight.ttf");
+}
+@font-face {
+ font-family:andale;
+ src: url("fonts/Andale-Mono.ttf");
+} 
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+</style>
+<div class="bg" style="background-image: url('images/blackwood.jpg');" ng-controller="View1Ctrl" style="height: 100vh;">
+<div class="container-fluid"  >
+ <!-- <img src="images/like.png" alt="love" style="font-family: lanenar; color: #fff; font-size: 6.0em;"> coding ? </img> -->
+ <div class="col-sm-12 col-md-6 col-lg-6">
+ <p style="font-family: lanenar; color: #fff; font-size: 5.5em; margin-top: 10vh; margin-left: 10vh;"><span style="color: #ff5252">&hearts;</span> coding? </p>
+ <p style="font-family: lanenar; font-size: 2.0em; color: #fff; margin-left: 25%; margin-top: 10%">Welcome to our coding blog.</p>	
+ <p style="font-family: lanenar; font-size: 2.0em; color: #fff; margin-left: 25%;">Get codes for most interesting concepts, leran new techniques.</p>
+ </div>
+ <div class="col-md-4 col-md-offset-4" style="float: right; color: #fff;" >
+ <div>
+  <form class="">
+  <div>
+  <h1 style="font-family: lanenar; font-size: 2.0em;"><b>LOGIN</b></h1>
+  
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input id="email" type="text" class="form-control" name="emailInput" ng-model="emailInput" placeholder="Email" style="width: 25%">
+    <input id="email" type="text" class="form-control" name="emailInput" ng-model="emailInput" placeholder="Email" style="width: 50%">
     <span ng-show="frm.email.$error.required">Required!</span>
     <span ng-show="frm.email.$error.email">Incorrect email id</span>
   </div><br>
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-    <input id="password" type="password" class="form-control" name="passwordInput" ng-model="passwordInput" placeholder="Password" style="width: 25%">
+    <input id="password" type="password" class="form-control" name="passwordInput" ng-model="passwordInput" placeholder="Password" style="width: 50%">
   </div>
   <div class="text-danger" ng-model="txt">{{txt}}</div>
-  </div>
+  </div><br>
   <a class="btn btn-primary" ng-click="submit();">Submit</a>
 </form><br>
 
-	
+</div>
+</div>
+</div>
+
 </div>

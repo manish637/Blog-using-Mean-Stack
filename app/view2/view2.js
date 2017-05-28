@@ -15,11 +15,16 @@ angular.module('myApp.view2', ['ngRoute'])
 	var goToPage1 = function() {
        $location.path('/view1'); 
     };
+
+
+    
  
     $scope.blogArray = [];
 	$scope.add = function () {
+		$scope.today = new Date();
+
 		if($scope.titleInput.length!=0 && $scope.blogInput.length!=0)
-		$scope.blogArray.push({"title":$scope.titleInput,"blog":$scope.blogInput});
+		$scope.blogArray.push({"title":$scope.titleInput,"blog":$scope.blogInput, "date":$scope.today});
 		else
 		$scope.showError="Please fill both the fields! ";
 	};
